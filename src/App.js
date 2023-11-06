@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TextCircles from "./components/TextCircles";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="hero">
+        <TextCircles />
+        <div id="hero-text">
+          <h1>Kevin Hurley</h1>
+          <h3>Web Developer</h3>
+        </div>
+        <div id="overlay-upper"></div>
+        <div id="overlay-lower"></div>
+      </div>
     </div>
   );
 }
