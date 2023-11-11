@@ -4,7 +4,6 @@ export default function TextCircle({ index, line, diameter }) {
   const direction = index % 2 ? "clockwise" : "counterclockwise";
   const duration = (index + 2) * 10 + "s";
   const opacity = 1 - (index + 1) / 20;
-  // const color = index % 2 ? "green" : "blue";
 
   return (
     <div
@@ -14,7 +13,6 @@ export default function TextCircle({ index, line, diameter }) {
         width: diameter,
         animationDuration: duration,
         opacity: opacity,
-        // color: color,
       }}
     >
       {line.split("").map((char, i) => (
