@@ -31,9 +31,9 @@ export default function TextCircles() {
   return (
     <motion.div
       id="text-circles"
-      initial={{ opacity: 0, scale: 0.1 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 4, ease: "easeIn" }}
     >
       {textLines.map((line, index) => (
         <TextCircle
