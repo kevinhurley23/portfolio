@@ -29,7 +29,8 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 5vw, 3rem);
-  margin: 0 0 1rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 h3 {
@@ -99,6 +100,23 @@ h3 {
   left: 50%;
 }
 
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counterclockwise {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 #about .container {
   display: flex;
   gap: 3rem;
@@ -140,19 +158,33 @@ h3 {
   }
 }
 
-@keyframes clockwise {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 5rem;
+  justify-items: center;
 }
-@keyframes counterclockwise {
-  0% {
-    transform: rotate(360deg);
+
+.project-card {
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--primary);
+  @media (max-width: 800px) {
+    max-width: 280px;
   }
-  100% {
-    transform: rotate(0deg);
+  & img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  & .project-title {
+    padding: 12px;
+    & h3 {
+      color: var(--accent2);
+      font-size: 1.3rem;
+      margin: 0;
+      text-align: center;
+    }
   }
 }

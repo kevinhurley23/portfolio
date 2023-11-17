@@ -1,6 +1,8 @@
 import "./App.css";
 import TextCircles from "./components/TextCircles";
+import ProjectGrid from "./components/ProjectGrid";
 import { motion } from "framer-motion";
+import profilePic from "./img/Portrait-Photo-9-27-22-small.jpg";
 
 function App() {
   return (
@@ -28,12 +30,12 @@ function App() {
           <div id="overlay-lower"></div>
         </section>
         <section id="about">
+          <h2>About Me</h2>
           <div className="container">
             <div className="left">
-              <img src="img/Portrait-Photo-9-27-22-small.jpg" alt="" />
+              <img src={profilePic} />
             </div>
             <div className="middle">
-              <h3>About Me</h3>
               <p>
                 I started my professional life as a music teacher. In the summer
                 of 2022 I decided to use my vacation time to pick up a new
@@ -76,6 +78,12 @@ function App() {
                 <li>Git</li>
               </ul>
             </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div className="container">
+            <h2>Projects</h2>
+            <ProjectGrid />
           </div>
         </section>
       </main>
