@@ -1,9 +1,15 @@
-export default function TextCircle({ index, line, diameter }) {
+export default function TextCircle({
+  index,
+  line,
+  diameter,
+  numCircles,
+  prefersReducedMotion,
+}) {
   const lineLength = line.length;
   const radius = diameter / 2;
   const direction = index % 2 ? "clockwise" : "counterclockwise";
   const duration = (index + 2) * 10 + "s";
-  const opacity = 1 - (index + 1) / 20;
+  const opacity = 1 - (index + 1) * (1 / (numCircles + 1));
 
   return (
     <div
@@ -11,7 +17,7 @@ export default function TextCircle({ index, line, diameter }) {
       style={{
         height: diameter,
         width: diameter,
-        animationDuration: duration,
+        animationDuration: prefersReducedMotion ? "0s" : duration,
         opacity: opacity,
       }}
     >

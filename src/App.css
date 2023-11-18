@@ -87,17 +87,17 @@ h3 {
   animation: linear infinite;
 }
 
+.circle span {
+  position: absolute;
+  left: 50%;
+}
+
 .circle.clockwise {
   animation-name: clockwise;
 }
 
 .circle.counterclockwise {
   animation-name: counterclockwise;
-}
-
-.circle span {
-  position: absolute;
-  left: 50%;
 }
 
 @keyframes clockwise {
