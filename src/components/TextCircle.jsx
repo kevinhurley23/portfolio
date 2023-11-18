@@ -9,7 +9,7 @@ export default function TextCircle({
   const radius = diameter / 2;
   const direction = index % 2 ? "clockwise" : "counterclockwise";
   const duration = (index + 2) * 10 + "s";
-  const opacity = 1 - (index + 1) * (1 / (numCircles + 1));
+  const opacity = 1 - index * (1 / numCircles);
 
   return (
     <div
