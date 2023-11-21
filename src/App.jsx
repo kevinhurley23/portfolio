@@ -1,12 +1,20 @@
 import "./App.css";
 import TextCircles from "./components/TextCircles";
 import ProjectGrid from "./components/ProjectGrid";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import profilePic from "./img/Portrait-Photo-9-27-22-small.jpg";
 
 function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 200,
+    damping: 50,
+    restDelta: 0.001,
+  });
+
   return (
     <div className="App">
+      <motion.div id="progress-bar" style={{ scaleX }} />
       <main>
         <section id="hero">
           <TextCircles />

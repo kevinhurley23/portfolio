@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
 import fallback from "../img/code.PNG";
 
-function ProjectCard({ title, tags, buildLink, srcLink, description }) {
+export default function ProjectCard({
+  title,
+  tags,
+  buildLink,
+  srcLink,
+  description,
+}) {
   function importAll(r) {
     return r.keys().map(r);
   }
@@ -12,14 +19,26 @@ function ProjectCard({ title, tags, buildLink, srcLink, description }) {
     image = fallback;
   }
 
+  const cardVariants = {
+    hidden: { opacity: 0, y: 200 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <div className={"project-card " + tags.join(" ")}>
+    <motion.div
+      className={"project-card " + tags.join(" ")}
+      variants={cardVariants}
+    >
       <img src={image} />
       <div className="project-title">
         <h3>{title}</h3>
       </div>
-    </div>
+    </motion.div>
   );
 }
-
-export default ProjectCard;

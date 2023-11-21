@@ -38,6 +38,17 @@ h3 {
   margin: 0 0 1rem;
 }
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(var(--accent2), var(--accent1));
+  transform-origin: 0%;
+  z-index: 10;
+}
+
 #hero {
   height: 100vh;
   position: relative;
@@ -158,10 +169,14 @@ h3 {
   }
 }
 
+#projects .container {
+  max-width: 1050px;
+}
+
 #project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 5rem;
+  gap: 3rem;
   justify-items: center;
 }
 
