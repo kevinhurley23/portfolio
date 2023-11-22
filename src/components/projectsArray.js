@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     title: "Green Valley Crossing",
-    tags: ["Astro"],
+    tags: ["Astro", "Strapi"],
     buildLink: "https://gvc-a7h7.onrender.com/",
     srcLink: "https://github.com/kevinhurley23/Green-Valley-Crossing",
     description: "Description",

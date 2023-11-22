@@ -44,7 +44,7 @@ function App() {
               <img src={profilePic} />
             </div>
             <div className="middle">
-              <p>
+              <p id="introduction">
                 I started my professional life as a music teacher. In the summer
                 of 2022 I decided to use my vacation time to pick up a new
                 skill, so I started learning web development. I liked it so much
