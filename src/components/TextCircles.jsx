@@ -55,6 +55,7 @@ export default function TextCircles() {
   return (
     <motion.div
       id="text-circles"
+      className="flex-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 4, ease: "easeIn" }}

@@ -1,0 +1,43 @@
+#about .container {
+  display: flex;
+  gap: 3rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+  & h3 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  & .left {
+    padding: auto;
+    & img {
+      display: block;
+      margin: 0 auto;
+      width: min(300px, 80vw);
+      height: auto;
+    }
+  }
+  & .right {
+    & ul {
+      padding-inline-start: 1.2em;
+      color: var(--secondary);
+      @media (max-width: 800px) {
+        display: flex;
+        gap: 0.6rem 3rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  & #introduction {
+    margin-top: 0;
+  }
+  & .experience {
+    margin-top: 3rem;
+  }
+  & .job-title {
+    font-size: 1.3em;
+  }
+  & p {
+    color: var(--secondary);
+  }
+}

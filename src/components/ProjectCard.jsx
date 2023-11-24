@@ -54,21 +54,13 @@ export default function ProjectCard({
       </motion.div>
       <AnimatePresence>
         {selectedId && (
-          <div className="modal-wrapper">
+          <motion.div className="modal-wrapper flex-center">
             <motion.div layoutId={selectedId} className="project-details">
               <motion.button onClick={() => setSelectedId(null)}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                  <path
-                    d="M15 5L5 15M5 5l5.03 5.03L15 15"
-                    fill="transparent"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                  ></path>
-                </svg>
+                <i class="fa-solid fa-x"></i>
               </motion.button>
-              <img src={largeImg} />
-              <div className="detail-text">
+              <motion.img src={largeImg} />
+              <motion.div className="detail-text">
                 <a href={buildLink} target="blank" className="build-link">
                   <motion.h3>{title}</motion.h3>
                 </a>
@@ -83,9 +75,9 @@ export default function ProjectCard({
                   ))}
                 </div>
                 <p>{description}</p>
-              </div>
+              </motion.div>
             </motion.div>
-          </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </>

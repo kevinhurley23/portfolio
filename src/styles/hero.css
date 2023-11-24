@@ -1,0 +1,72 @@
+#hero {
+  height: 100vh;
+  position: relative;
+}
+
+#text-circles {
+  position: relative;
+  height: 100%;
+  overflow: clip;
+}
+
+#hero-text {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.4), transparent);
+  flex-direction: column;
+  & h2 {
+    margin: 0;
+    color: var(--accent1);
+  }
+}
+
+#overlay-upper {
+  position: absolute;
+  top: 0;
+  height: 30%;
+  width: 100%;
+  background: linear-gradient(var(--background), transparent);
+}
+
+#overlay-lower {
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  background: linear-gradient(transparent, var(--background));
+}
+
+.circle {
+  position: absolute;
+  animation: linear infinite;
+}
+
+.circle span {
+  position: absolute;
+  left: 50%;
+}
+
+.circle.clockwise {
+  animation-name: clockwise;
+}
+
+.circle.counterclockwise {
+  animation-name: counterclockwise;
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counterclockwise {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
