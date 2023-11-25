@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import TextCircle from "./TextCircle";
 import { motion } from "framer-motion";
 
-export default function TextCircles() {
+export default function TextCircles({ animationsOn }) {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
@@ -33,15 +33,8 @@ export default function TextCircles() {
     };
     window.addEventListener("resize", handleResize);
 
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mediaQuery.matches);
-
-    const listener = () => setPrefersReducedMotion(mediaQuery.matches);
-    mediaQuery.addListener(listener);
-
     return () => {
       window.removeEventListener("resize", handleResize);
-      mediaQuery.removeListener(listener);
     };
   }, []);
 
@@ -67,7 +60,7 @@ export default function TextCircles() {
           line={line}
           numCircles={numCircles}
           diameter={innerDiameter * (1 + index / 3.5)}
-          prefersReducedMotion={prefersReducedMotion}
+          animationsOn={animationsOn}
         />
       ))}
     </motion.div>

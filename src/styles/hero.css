@@ -12,7 +12,7 @@
 #hero-text {
   position: absolute;
   inset: 0;
-  background: radial-gradient(rgba(0, 0, 0, 0.4), transparent);
+  /* background: radial-gradient(rgba(0, 0, 0, 0.4), transparent); */
   flex-direction: column;
   & h2 {
     margin: 0;

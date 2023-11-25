@@ -3,7 +3,7 @@ export default function TextCircle({
   line,
   diameter,
   numCircles,
-  prefersReducedMotion,
+  animationsOn,
 }) {
   const lineLength = line.length;
   const radius = diameter / 2;
@@ -17,7 +17,7 @@ export default function TextCircle({
       style={{
         height: diameter,
         width: diameter,
-        animationDuration: prefersReducedMotion ? "0s" : duration,
+        animationDuration: animationsOn ? duration : "0s",
         opacity: opacity,
       }}
     >

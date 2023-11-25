@@ -15,8 +15,12 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: var(--primary);
+  transition: 0.2s;
   @media (max-width: 800px) {
     max-width: 280px;
+  }
+  &:hover {
+    box-shadow: var(--primary) 0 0 15px;
   }
   & img {
     width: 100%;
@@ -42,7 +46,7 @@
 
 .project-details {
   position: relative;
-  max-width: 80%;
+  max-width: min(80%, 1100px);
   border: 3px solid var(--secondary);
   border-radius: 10px;
   background-color: var(--primary);

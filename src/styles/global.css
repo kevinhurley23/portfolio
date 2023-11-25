@@ -1,6 +1,15 @@
-:root {
+[data-theme="light"] {
+  --primary: rgb(0, 0, 0);
+  --secondary: rgb(107, 107, 107);
+  --background: white;
+  --accent1: rgb(12, 204, 230);
+  --accent2: rgb(83, 190, 204);
+  --accent3: color-mix(in srgb, var(--accent2) 20%, transparent);
+}
+
+[data-theme="dark"] {
   --primary: white;
-  --secondary: rgb(192, 192, 192);
+  --secondary: rgb(173, 173, 173);
   --background: rgb(14, 14, 14);
   --accent1: rgb(196, 10, 10);
   --accent2: rgb(115, 10, 10);
@@ -11,6 +20,11 @@
   background-color: var(--background);
   color: var(--primary);
   font-size: 1rem;
+  transition: 0.5s;
+}
+
+.transition {
+  transition: 0.5s;
 }
 
 main {
@@ -43,62 +57,4 @@ h2 {
 h3 {
   font-size: 2.5rem;
   margin: 0 0 1rem;
-}
-
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: linear-gradient(90deg, var(--accent2), var(--accent1));
-  transform-origin: 0%;
-  z-index: 20;
-}
-
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 15;
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem 2rem;
-  background-color: var(--background);
-  box-shadow: var(--background) 0 10px 10px;
-  padding: 20px 15px 10px;
-  color: var(--secondary);
-  font-size: 1.1rem;
-  @media (max-width: 600px) {
-    flex-direction: column;
-  }
-}
-
-#animation-toggle,
-#dark-mode-toggle {
-  width: 200px;
-}
-
-#dark-mode-toggle {
-  @media (min-width: 600px) {
-    text-align: end;
-  }
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem 2rem;
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: start;
-  }
-  & a {
-    text-decoration: none;
-    color: var(--secondary);
-    &:hover {
-      color: var(--primary);
-    }
-  }
 }
