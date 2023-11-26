@@ -56,7 +56,7 @@
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
-  &[data-isOn="true"] {
+  &[data-ison="true"] {
     justify-content: flex-end;
   }
 }

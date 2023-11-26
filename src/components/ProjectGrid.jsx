@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectGrid() {
   const [ref, inView] = useInView({
     triggerOnce: true,
+    rootMargin: "-300px 0px",
   });
 
   const gridVariants = {

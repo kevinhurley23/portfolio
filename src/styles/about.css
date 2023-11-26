@@ -1,4 +1,4 @@
-#about .container {
+#about .row {
   display: flex;
   gap: 3rem;
   @media (max-width: 800px) {

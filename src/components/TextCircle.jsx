@@ -17,12 +17,14 @@ export default function TextCircle({
       style={{
         height: diameter,
         width: diameter,
-        animationDuration: animationsOn ? duration : "0s",
+        animationDuration: duration,
+        animationPlayState: animationsOn ? "running" : "paused",
         opacity: opacity,
       }}
     >
       {line.split("").map((char, i) => (
         <span
+          key={i}
           style={{
             transform: `rotate(${i * (360 / lineLength)}deg)`,
             transformOrigin: `0 ${radius}px`,

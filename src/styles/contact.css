@@ -1,0 +1,27 @@
+#contact {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 0 2rem;
+  & h2 {
+    margin: 0;
+  }
+  & p {
+    font-size: 1.1rem;
+  }
+  & a {
+    color: var(--primary);
+  }
+}
+
+#contact-buttons {
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.contact-label {
+  margin-left: 1rem;
+  font-size: 0.7em;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

@@ -20,7 +20,6 @@
   background-color: var(--background);
   color: var(--primary);
   font-size: 1rem;
-  transition: 0.5s;
 }
 
 .transition {
@@ -34,7 +33,7 @@ main {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .flex-center {

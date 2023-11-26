@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Switch({ id, state, func }) {
+export default function Switch({ state, func }) {
   const spring = {
     type: "spring",
     stiffness: 700,
@@ -8,7 +8,7 @@ export default function Switch({ id, state, func }) {
   };
 
   return (
-    <div id={id} className="switch" data-isOn={state} onClick={func}>
+    <div className="switch" data-ison={state} onClick={func}>
       <motion.div className="handle" layout transition={spring} />
     </div>
   );

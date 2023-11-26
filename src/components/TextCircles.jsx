@@ -5,25 +5,24 @@ import { motion } from "framer-motion";
 export default function TextCircles({ animationsOn }) {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const innerDiameter = 300;
   const textLines = [
-    `! function    {"use strict"} document`,
-    `module&&"object"    ==typeof    module.exports`,
-    `e.document?t(e,!0):      function(e){if(!e.document)`,
-    `t(e)}    ("undefined"!=typeof    window?window:this,function   {"use strict";`,
-    `r=Object.getPrototypeOf,   s=t.slice,g=t.flat?    function(e){return t.flat.call(e)}:function  `,
-    `constructor:    S,length:0,toArray:     function(){return s.call(this)},get:function(e){return null==e?s   `,
-    `e<0?this[e+this.length]     ,pushStack:function(e{   var t=S.merge(this.constructor(),e);return t.prevObject    `,
-    `r=Object    .getPrototypeOf,s=t.   slice,g=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat   `,
-    `constructor:S,length:0,    toArray:function()    {return s.call(this)},get:function(e)   {return null==e?s`,
-    `e<0?this[e+this.length]    ,pushStack:  function(e)   {var t=S.merge  (this.constructor(),e)   t.prevObject=this,t}`,
-    `constructor:S,length:0,toArray:function(){return s.call(this)},get:function(e){return null==e?s.call(this)`,
-    `e<0?this[e+this.length]:this[e]},    pushStack:function(e){var     t=S.merge(this.constructor(),e);return    each:function(e){return`,
-    `r=Object.getPrototypeOf,s=t.slice,g=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply`,
-    `constructor:S,length:0,toArray:function(){return s.call(this)},get:function(e){return null==e?s.call(this)`,
-    `e<0?this[e+this.length]:this[e]},pushStack:function(e){var t=S.merge(this.constructor(),e);return t.prevObject=this,t},each:function(e)`,
-    `e<0?this[e+this.length]:this[e]},pushStack:function(e){var t=S.merge(this.constructor(),e);return t.prevObject=this,t},each:function(e){return`,
+    `!function    {"use strict"} document`,
+    `  module&&"object"  =typeof   module.exports  `,
+    `e.document?t(e,!0):    function(e)   {if(!e.document)`,
+    `t(e)}    ("undefined"!=typeof window?window:this,function   {"use strict";`,
+    `   r=Object.getPrototypeOf,   s=t.slice,g=t.flat?    function(e){return t.call   :function  `,
+    `constructor:   length:0,toArray:   function()   {return s.call(this)}    :function(e){return   null==e?s`,
+    `e<0?this[e+this.length]     ,pushStack:function(e{   var t=S.merge   (constructor(),e);return t.prevObject    `,
+    `   r=Object    .getPrototypeOf,s=t.   slice,g=t.flat?function    {return t.flat.call(e)}   :function{return t.concat`,
+    `constructor:S,length:0,    toArray:function()    {return s.call(this)},get:   function(e)   {return null==e?s`,
+    `e<0?this[e+this.length],pushStack:    function(e)   {var t=S.merge  (this.constructor(),e)   t.prevObject=this,t}`,
+    `constructor:S,    0,toArray:function(){return     (this)},get:function    (e){return null==e?s.call(this)`,
+    `e<0?this[e+this.length]:this[e]},    pushStack:function(e){var     t=S.merge(this.constructor(),e);return    each:function(e)`,
+    `r=Object   .getPrototypeOf,   s=t.slice,g=t.flat?   function(e){return   t.flat.call(e)}:function(e)    {return t.concat.apply`,
+    `constructor:S,length   toArray:function(){return s.call    ,get:function(e){return   null==e?s.call(this)`,
+    `e<0?this[e+this.length]    :this[e]},  pushStack:function(e){var    t=S.merge(this.constructor()    ,e);return t.prevObject=this,t}`,
+    `e<0?this    [length]:this[e]},pushStack:function    {var t=S  (this.constructor();return   prevObject=this,t},each:function`,
   ];
 
   useEffect(() => {

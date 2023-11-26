@@ -12,28 +12,11 @@
 #hero-text {
   position: absolute;
   inset: 0;
-  /* background: radial-gradient(rgba(0, 0, 0, 0.4), transparent); */
   flex-direction: column;
   & h2 {
     margin: 0;
     color: var(--accent1);
   }
-}
-
-#overlay-upper {
-  position: absolute;
-  top: 0;
-  height: 30%;
-  width: 100%;
-  background: linear-gradient(var(--background), transparent);
-}
-
-#overlay-lower {
-  position: absolute;
-  bottom: 0;
-  height: 30%;
-  width: 100%;
-  background: linear-gradient(transparent, var(--background));
 }
 
 .circle {
