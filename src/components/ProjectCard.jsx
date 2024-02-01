@@ -57,7 +57,7 @@ export default function ProjectCard({
           <motion.div className="modal-wrapper flex-center">
             <motion.div layoutId={selectedId} className="project-details">
               <motion.button onClick={() => setSelectedId(null)}>
-                <i class="fa-solid fa-x"></i>
+                <i className="fa-solid fa-x"></i>
               </motion.button>
               <motion.img src={largeImg} />
               <motion.div className="detail-text">
