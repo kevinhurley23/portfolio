@@ -4,21 +4,21 @@
   @media (max-width: 800px) {
     flex-direction: column;
   }
-  & h3 {
+  h3 {
     font-size: 2rem;
     line-height: 1;
   }
-  & .left {
+  .left {
     padding: auto;
-    & img {
+    img {
       display: block;
       margin: 0 auto;
       width: min(300px, 80vw);
       height: auto;
     }
   }
-  & .right {
-    & ul {
+  .right {
+    ul {
       padding-inline-start: 1.2em;
       color: var(--secondary);
       @media (max-width: 800px) {
@@ -28,16 +28,16 @@
       }
     }
   }
-  & #introduction {
+  #introduction {
     margin-top: 0;
   }
-  & .experience {
+  .experience {
     margin-top: 3rem;
   }
-  & .job-title {
+  .job-title {
     font-size: 1.3em;
   }
-  & p {
+  p {
     color: var(--secondary);
   }
 }

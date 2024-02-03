@@ -24,11 +24,23 @@
   color: var(--secondary);
   font-size: 1.1rem;
   font-weight: 500;
-  @media (max-width: 600px) {
-    flex-direction: column;
-  }
-  & i {
+  i {
     font-size: 1.3em;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+    @media (max-width: 620px) {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+      color: var(--secondary);
+      &:hover {
+        color: var(--primary);
+      }
+    }
   }
 }
 
@@ -44,9 +56,7 @@
 }
 
 #dark-mode-toggle {
-  @media (min-width: 600px) {
-    justify-content: end;
-  }
+  justify-content: end;
 }
 
 .switch {
@@ -66,21 +76,4 @@
   height: 20px;
   background-color: var(--primary);
   border-radius: 50%;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem 2rem;
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: start;
-  }
-  & a {
-    text-decoration: none;
-    color: var(--secondary);
-    &:hover {
-      color: var(--primary);
-    }
-  }
 }
