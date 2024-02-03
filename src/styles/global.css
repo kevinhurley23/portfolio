@@ -16,6 +16,10 @@
   --accent3: color-mix(in srgb, var(--accent2) 20%, transparent);
 }
 
+body:has(.modal-wrapper) {
+  overflow: hidden;
+}
+
 .App {
   background-color: var(--background);
   color: var(--primary);
