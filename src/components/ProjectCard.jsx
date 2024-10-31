@@ -59,11 +59,13 @@ export default function ProjectCard({
     const backdrop = document.querySelector(".modal-backdrop");
 
     setModalStyles(card, detailsModal, true);
-    detailsModal.classList.add("expanded");
     card.style.opacity = 0;
     backdrop.style.zIndex = 2;
     backdrop.style.opacity = 100;
-    setTimeout(() => detailsModal.removeAttribute("style"), 20);
+    setTimeout(() => {
+      detailsModal.removeAttribute("style");
+      detailsModal.classList.add("expanded");
+    }, 20);
   }
 
   function closeDetailsModal() {
@@ -76,8 +78,8 @@ export default function ProjectCard({
     detailsModal.classList.remove("expanded");
     backdrop.style.opacity = "";
     setTimeout(() => {
-      detailsModal.style.display = "none";
       card.style.opacity = 100;
+      detailsModal.style.display = "none";
       backdrop.style.zIndex = "";
     }, transitionTime * 0.9);
   }
@@ -128,8 +130,14 @@ export default function ProjectCard({
         <button onClick={() => closeDetailsModal()}>
           <i className="fa-solid fa-x"></i>
         </button>
-        <img src={largeImg} />
-        {/* <div className="detail-text">
+        <div className="image">
+          <img className="large-img" src={largeImg} />
+          <img className="thumb" src={thumb} />
+        </div>
+        <div className="project-title">
+          <h3>{title}</h3>
+        </div>
+        <div className="detail-text">
           <a href={buildLink} target="blank" className="build-link">
             <h3>{title}</h3>
           </a>
@@ -144,7 +152,7 @@ export default function ProjectCard({
             ))}
           </div>
           <p>{description}</p>
-        </div> */}
+        </div>
       </div>
     </>
   );
