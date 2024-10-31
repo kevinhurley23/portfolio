@@ -16,8 +16,8 @@
   --accent3: color-mix(in srgb, var(--accent2) 20%, transparent);
 }
 
-body:has(.modal-wrapper) {
-  overflow: hidden;
+* {
+  box-sizing: border-box;
 }
 
 .App {

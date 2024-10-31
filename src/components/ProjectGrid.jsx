@@ -20,23 +20,26 @@ export default function ProjectGrid() {
   };
 
   return (
-    <motion.div
-      id="project-grid"
-      variants={gridVariants}
-      initial="hidden"
-      animate={inView ? "show" : "hidden"}
-      ref={ref}
-    >
-      {projects.map((project) => (
-        <ProjectCard
-          key={project.title}
-          title={project.title}
-          tags={project.tags}
-          buildLink={project.buildLink}
-          srcLink={project.srcLink}
-          description={project.description}
-        />
-      ))}
-    </motion.div>
+    <>
+      <div class="modal-backdrop"></div>
+      <motion.div
+        id="project-grid"
+        variants={gridVariants}
+        initial="hidden"
+        animate={inView ? "show" : "hidden"}
+        ref={ref}
+      >
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            tags={project.tags}
+            buildLink={project.buildLink}
+            srcLink={project.srcLink}
+            description={project.description}
+          />
+        ))}
+      </motion.div>
+    </>
   );
 }
