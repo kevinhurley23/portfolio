@@ -1,4 +1,4 @@
-import profilePic from "../img/Portrait-Photo-9-27-22-small.jpg";
+import profilePic from "../img/Portrait-Photo-9-7-24_03.jpg";
 
 export default function About() {
   return (
@@ -25,11 +25,16 @@ export default function About() {
             <div className="job-length">February 2023 - Present</div>
             <p className="job-description">
               I maintain and improve the school's Drupal and Wordpress sites,
-              writing in HTML, Twig, Sass, PHP, and JavaScript. I have created a
-              custom WordPress theme for the university's event sites, and am
-              overseeing the trasition of all WordPress sites from hosting on
+              writing in HTML, Twig, CSS, Sass, PHP, and JavaScript. I have
+              created a custom WordPress theme for the university's event sites,
+              and I oversaw the trasition of all WordPress sites from hosting on
               local servers to WP Engine. I work on templates for a variety of
-              different Drupal entity types.
+              different Drupal entity types. We are currently redesigning our
+              flagship Drupal site, and I have taken the lead on developing a
+              new theme using component-based design principles for greater
+              flexibility for content authors. I frequently find ways to update
+              our codebase with modern CSS techniques, such as subgrid and
+              container queries.
             </p>
           </div>
         </div>
