@@ -14,6 +14,7 @@
       margin: 0 auto;
       width: min(300px, 30vw);
       height: auto;
+      border-radius: 10px;
       @media (max-width: 800px) {
         width: min(300px, 100%);
       }
