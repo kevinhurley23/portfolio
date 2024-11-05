@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { projects } from "./projectsArray";
 import ProjectCard from "./ProjectCard";
 
-export default function ProjectGrid() {
+export default function ProjectGrid({ animationsOn }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: "-300px 0px",
@@ -13,13 +13,23 @@ export default function ProjectGrid() {
   const [transitionTime, setTransitionTime] = useState("");
 
   useEffect(() => {
-    const projectDetails = document.querySelector(".project-details");
-    if (projectDetails) {
-      const computedStyle = window.getComputedStyle(projectDetails);
-      const duration = parseFloat(computedStyle.transition) * 1000;
-      setTransitionTime(duration);
-    }
-  }, []); // Empty dependency array ensures this runs once after the component mounts
+    const updateTransitionTime = () => {
+      const projectSection = document.querySelector("#projects");
+      if (animationsOn) {
+        const projectDetails = document.querySelector(".project-details");
+        if (projectDetails) {
+          const computedStyle = window.getComputedStyle(projectDetails);
+          const duration = parseFloat(computedStyle.transition) * 1000;
+          setTransitionTime(duration);
+          projectSection.style.setProperty("--transition", "");
+        }
+      } else {
+        setTransitionTime(0);
+        projectSection.style.setProperty("--transition", "0ms");
+      }
+    };
+    updateTransitionTime();
+  }, [animationsOn]);
 
   function setModalStyles(card, modal, opening) {
     // the 'opening' parameter is a boolean
