@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f2450b74.css",
-    "main.js": "/portfolio/static/js/main.1a5d3c70.js",
+    "main.css": "/portfolio/static/css/main.88934405.css",
+    "main.js": "/portfolio/static/js/main.eb006650.js",
     "static/js/787.a7a53f8a.chunk.js": "/portfolio/static/js/787.a7a53f8a.chunk.js",
+    "static/media/Portrait-Photo-9-7-24_03.jpg": "/portfolio/static/media/Portrait-Photo-9-7-24_03.922ed08be4e61b9f1587.jpg",
     "static/media/code-500.png": "/portfolio/static/media/code-500.ae069b81b8d4f8fba261.png",
     "static/media/Pomodoro Clock.PNG": "/portfolio/static/media/Pomodoro Clock.18d316d3460ecd674678.PNG",
     "static/media/Academic Program.png": "/portfolio/static/media/Academic Program.12bbf97b4d48d53f6af9.png",
     "static/media/Drum Machine.PNG": "/portfolio/static/media/Drum Machine.4c049b5cc1ffe5d9494b.PNG",
     "static/media/code-300.png": "/portfolio/static/media/code-300.7867eac076b66c3f1c3d.png",
     "static/media/World Trade Day.jpg": "/portfolio/static/media/World Trade Day.9fdaa08141726711c515.jpg",
-    "static/media/Portrait-Photo-9-27-22-small.jpg": "/portfolio/static/media/Portrait-Photo-9-27-22-small.115f7a4a1964f3f64391.jpg",
     "static/media/Vision 2030.jpg": "/portfolio/static/media/Vision 2030.c158f8c53fee6de6a72a.jpg",
     "static/media/Green Valley Crossing.jpg": "/portfolio/static/media/Green Valley Crossing.5c3854a6a1154f5cada4.jpg",
     "static/media/Find and Replace.jpg": "/portfolio/static/media/Find and Replace.7517538b64d9e5eb9efd.jpg",
@@ -17,12 +17,12 @@
     "static/media/Find and Replace.PNG": "/portfolio/static/media/Find and Replace.34e238d87c4c2608da6c.PNG",
     "static/media/Javascript Calculator.PNG": "/portfolio/static/media/Javascript Calculator.44de21db4a1904c99369.PNG",
     "index.html": "/portfolio/index.html",
-    "main.f2450b74.css.map": "/portfolio/static/css/main.f2450b74.css.map",
-    "main.1a5d3c70.js.map": "/portfolio/static/js/main.1a5d3c70.js.map",
+    "main.88934405.css.map": "/portfolio/static/css/main.88934405.css.map",
+    "main.eb006650.js.map": "/portfolio/static/js/main.eb006650.js.map",
     "787.a7a53f8a.chunk.js.map": "/portfolio/static/js/787.a7a53f8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2450b74.css",
-    "static/js/main.1a5d3c70.js"
+    "static/css/main.88934405.css",
+    "static/js/main.eb006650.js"
   ]
 }
