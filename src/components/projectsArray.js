@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Finance Tracker",
+    tags: ["Svelte", "PHP", "MySQL"],
+    buildLink: "https://kevinhurley23.github.io/finance-tracker/",
+    srcLink: "https://github.com/kevinhurley23/finance-tracker",
+    description:
+      "My wife and I used to track our finances with a spreadsheet, but I became annoyed with the limitations and decided to build a more elegant, custom solution. I wanted to create a tool that would allow me to input my income and expenses and see a summary of my financial situation. I created this project using Svelte for the front end, PHP for the back end, and MySQL for the database. I host the app we actually use on my own desktop, so for security reasons the publically-viewable version linked here does not connect to my back end, but rather uses placeholder data.",
+  },
+  {
     title: "Vision 2030",
     tags: ["Drupal"],
     buildLink: "https://vision2030.bryant.edu",

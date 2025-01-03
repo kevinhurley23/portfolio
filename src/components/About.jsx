@@ -48,6 +48,9 @@ export default function About() {
             <li>JavaScript</li>
             <li>jQuery</li>
             <li>React</li>
+            <li>Svelte</li>
+            <li>Astro</li>
+            <li>PHP</li>
             <li>Drupal</li>
             <li>WordPress</li>
             <li>Git</li>
