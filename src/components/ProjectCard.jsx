@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import thumbFallback from "../img/code-300.png";
 import largeFallback from "../img/code-500.png";
 
 export default function ProjectCard({
   title,
+  id,
   tags,
   buildLink,
   srcLink,
@@ -12,19 +12,16 @@ export default function ProjectCard({
   openDetailsModal,
   closeDetailsModal,
 }) {
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const thumbs = importAll(require.context("../img/project-thumb"));
-  const largeImgs = importAll(require.context("../img/project-large"));
-  const regex = new RegExp(title);
-  let thumb = thumbs.find((value) => regex.test(value));
-  let largeImg = largeImgs.find((value) => regex.test(value));
-  if (!thumb) {
+  let thumb;
+  let largeImg;
+  try {
+    thumb = require(`../img/project-thumb/${id}.jpg`);
+  } catch (e) {
     thumb = thumbFallback;
   }
-  if (!largeImg) {
+  try {
+    largeImg = require(`../img/project-large/${id}.jpg`);
+  } catch (e) {
     largeImg = largeFallback;
   }
 
@@ -39,12 +36,12 @@ export default function ProjectCard({
     },
   };
 
-  const spacelessTitle = title.replace(/\s/g, "-");
+  // const spacelessTitle = title.replace(/\s/g, "-");
 
   return (
     <>
       <motion.div
-        id={spacelessTitle}
+        id={id}
         className={"project-card " + tags.join(" ")}
         variants={cardVariants}
         onClick={(event) => openDetailsModal(event)}
@@ -56,7 +53,7 @@ export default function ProjectCard({
       </motion.div>
       <div
         className="project-details"
-        data-id={spacelessTitle}
+        data-id={id}
         style={{ display: "none" }}
       >
         <button onClick={() => closeDetailsModal()}>

@@ -1,6 +1,7 @@
 export const projects = [
   {
     title: "Finance Tracker",
+    id: 'finance-tracker',
     tags: ["Svelte", "PHP", "MySQL"],
     buildLink: "https://kevinhurley23.github.io/finance-tracker/",
     srcLink: "https://github.com/kevinhurley23/finance-tracker",
@@ -8,22 +9,25 @@ export const projects = [
       "My wife and I used to track our finances with a spreadsheet, but I became annoyed with the limitations and decided to build a more elegant, custom solution. I wanted to create a tool that would allow me to input my income and expenses and see a summary of my financial situation. I created this project using Svelte for the front end, PHP for the back end, and MySQL for the database. I host the app we actually use on my own desktop, so for security reasons the publically-viewable version linked here does not connect to my back end, but rather uses placeholder data.",
   },
   {
+    title: "Bryant.edu",
+    id: 'web2024',
+    tags: ["Drupal"],
+    buildLink:
+      "https://www.bryant.edu",
+    description:
+      "In 2024 my team developed a completely redesigned version of Bryant's flagship website, and I took the lead on this project. In addition to implementing a new and more complex visual design, I also reworked how we set up the content types and fields in the Drupal back end, creating a system that heavily leverages Drupal Paragraphs to give content authors great flexibility in how they lay out pages. I also transitioned us away from Sass and Bootstrap to use modern, vanilla CSS.",
+  },
+  {
     title: "Vision 2030",
+    id: 'vision-2030',
     tags: ["Drupal"],
     buildLink: "https://vision2030.bryant.edu",
     description:
       "In the fall of 2023 I was tasked with implementing a complete redesign of Bryant University's Vision 2030 website. This involved templating 5 new content types and a new, animated navigation design.",
   },
   {
-    title: "Academic Program",
-    tags: ["Drupal"],
-    buildLink:
-      "https://www.bryant.edu/academics/program-finder/graduate-certificate/graduate-certificate-business-analytics",
-    description:
-      "In the summer of 2023 I built the redesign of the content type used to display Bryant University's various academic programs.",
-  },
-  {
     title: "World Trade Day",
+    id: 'world-trade-day',
     tags: ["WordPress"],
     buildLink: "https://worldtradeday.bryant.edu/",
     description:
@@ -31,6 +35,7 @@ export const projects = [
   },
   {
     title: "Green Valley Crossing",
+    id: 'green-valley-crossing',
     tags: ["Astro", "Strapi"],
     buildLink: "https://kevinhurley23.github.io/Green-Valley-Crossing/",
     srcLink: "https://github.com/kevinhurley23/Green-Valley-Crossing",
@@ -39,6 +44,7 @@ export const projects = [
   },
   {
     title: "Find and Replace",
+    id: 'find-and-replace',
     tags: ["jQuery"],
     buildLink: "https://kevinhurley23.github.io/Online-Find-and-Replace-Tool/",
     srcLink: "https://github.com/kevinhurley23/Online-Find-and-Replace-Tool",
@@ -47,6 +53,7 @@ export const projects = [
   },
   {
     title: "Drum Machine",
+    id: 'drum-machine',
     tags: ["React"],
     buildLink: "https://kevinhurley23.github.io/drum-machine/",
     srcLink: "https://github.com/kevinhurley23/drum-machine/tree/master",
@@ -55,6 +62,7 @@ export const projects = [
   },
   {
     title: "Javascript Calculator",
+    id: 'javascript-calculator',
     tags: ["React"],
     buildLink: "https://kevinhurley23.github.io/javascript-calculator/",
     srcLink:
@@ -64,6 +72,7 @@ export const projects = [
   },
   {
     title: "Pomodoro Clock",
+    id: 'pomodoro-clock',
     tags: ["jQuery"],
     buildLink: "https://kevinhurley23.github.io/pomodoro-clock",
     srcLink: "https://github.com/kevinhurley23/pomodoro-clock/tree/master",

@@ -29,8 +29,8 @@ export default function About() {
               created a custom WordPress theme for the university's event sites,
               and I oversaw the trasition of all WordPress sites from hosting on
               local servers to WP Engine. I work on templates for a variety of
-              different Drupal entity types. We are currently redesigning our
-              flagship Drupal site, and I have taken the lead on developing a
+              different Drupal entity types. We recently redesigned our
+              flagship Drupal site, and I took the lead on developing a
               new theme using component-based design principles for greater
               flexibility for content authors. I frequently find ways to update
               our codebase with modern CSS techniques, such as subgrid and
