@@ -36,8 +36,6 @@ export default function ProjectCard({
     },
   };
 
-  // const spacelessTitle = title.replace(/\s/g, "-");
-
   return (
     <>
       <motion.div
@@ -77,7 +75,7 @@ export default function ProjectCard({
           )}
           <div className="tag-row">
             {tags.map((tag) => (
-              <div className="tag">{tag}</div>
+              <div key={tag} className="tag">{tag}</div>
             ))}
           </div>
           <p>{description}</p>

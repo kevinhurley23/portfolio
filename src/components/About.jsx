@@ -1,4 +1,5 @@
 import profilePic from "../img/Portrait-Photo-9-7-24_03.jpg";
+import { experience } from "../content/experience/experience.js";
 
 export default function About() {
   return (
@@ -9,34 +10,23 @@ export default function About() {
           <img src={profilePic} />
         </div>
         <div className="middle">
-          <p id="introduction">
-            I started my professional life as a music teacher. In the summer of
-            2022 I decided to use my vacation time to pick up a new skill, so I
-            started learning web development. I liked it so much I decided to
-            change careers, and in less than I year I got my first coding job!
-            Now I create and maintain websites fulltime for Bryant University,
-            but I'm available for freelance work as well. If you're looking for
-            someone passionate and skilled to design, build and deploy a quality
-            website for you, get in touch!
-          </p>
-          <h3 className="experience">Experience</h3>
-          <div className="job">
-            <div className="job-title">Web Developer - Bryant University</div>
-            <div className="job-length">February 2023 - Present</div>
-            <p className="job-description">
-              I maintain and improve the school's Drupal and Wordpress sites,
-              writing in HTML, Twig, CSS, Sass, PHP, and JavaScript. I have
-              created a custom WordPress theme for the university's event sites,
-              and I oversaw the trasition of all WordPress sites from hosting on
-              local servers to WP Engine. I work on templates for a variety of
-              different Drupal entity types. We recently redesigned our
-              flagship Drupal site, and I took the lead on developing a
-              new theme using component-based design principles for greater
-              flexibility for content authors. I frequently find ways to update
-              our codebase with modern CSS techniques, such as subgrid and
-              container queries.
-            </p>
+          <div className="prose">
+            {/* aboutMe.md */}
           </div>
+          <h3>Technical Approach</h3>
+          <div className="prose">
+            {/* technicalApproach.md */}
+          </div>
+          <h3 className="experience">Experience</h3>
+          {experience.map(role => (
+            <div key={role.id} className="job">
+              <div className="job-title">{role.title} - {role.employer}</div>
+              <div className="job-length">{role.start} - {role.end || 'Present'}</div>
+              <div className="prose">
+                {/* role.description */}
+              </div>
+            </div>
+          ))}
         </div>
         <div className="right">
           <h3>Skills</h3>

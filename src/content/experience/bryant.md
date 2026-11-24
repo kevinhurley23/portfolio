@@ -1,0 +1,5 @@
+I maintain and develop the university's Drupal websites, working across HTML, Twig, vanilla CSS, PHP, and JavaScript. I led the development of a new theme for the flagship site using component-based design principles, creating a system that gives content authors significant flexibility in how they assemble page layouts.
+
+On the infrastructure side, I implemented a robust configuration management workflow — importing and exporting configuration, staging changes through version control, and using Configuration Split with Config Ignore to manage environment-specific overrides across the deployment pipeline.
+
+I've also authored several custom Drupal modules to solve specific institutional needs, including a module for custom Twig filters that streamline template logic, and an accessibility module that ensures every page maintains a proper heading hierarchy by automatically promoting the first heading on pages that lack an h1.

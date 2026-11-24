@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { projects } from "./projectsArray";
+import { projects } from "../content/projects/projects";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectGrid({ animationsOn }) {
@@ -107,7 +107,7 @@ export default function ProjectGrid({ animationsOn }) {
 
   return (
     <>
-      <div class="modal-backdrop" onClick={() => closeDetailsModal()}></div>
+      <div className="modal-backdrop" onClick={() => closeDetailsModal()}></div>
       <motion.div
         id="project-grid"
         variants={gridVariants}
