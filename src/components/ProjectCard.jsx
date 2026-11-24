@@ -78,7 +78,9 @@ export default function ProjectCard({
               <div key={tag} className="tag">{tag}</div>
             ))}
           </div>
-          <p>{description}</p>
+          <div className="description">
+            {/* description from .md file referenced in the projects array */}
+          </div>
         </div>
       </div>
     </>

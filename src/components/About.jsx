@@ -11,11 +11,11 @@ export default function About() {
         </div>
         <div className="middle">
           <div className="prose">
-            {/* aboutMe.md */}
+            {/* src\content\aboutMe.md */}
           </div>
           <h3>Technical Approach</h3>
           <div className="prose">
-            {/* technicalApproach.md */}
+            {/* src\content\technicalApproach.md */}
           </div>
           <h3 className="experience">Experience</h3>
           {experience.map(role => (
@@ -23,7 +23,7 @@ export default function About() {
               <div className="job-title">{role.title} - {role.employer}</div>
               <div className="job-length">{role.start} - {role.end || 'Present'}</div>
               <div className="prose">
-                {/* role.description */}
+                {/* description from .md file referenced in role.description */}
               </div>
             </div>
           ))}

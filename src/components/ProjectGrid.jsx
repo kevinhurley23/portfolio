@@ -79,9 +79,6 @@ export default function ProjectGrid({ animationsOn }) {
     const id = detailsModal.dataset.id;
     const card = document.querySelector(`#${id}`);
     const backdrop = document.querySelector(".modal-backdrop");
-    console.log(detailsModal)
-    console.log(id)
-    console.log(card)
 
     setModalStyles(card, detailsModal, false);
     detailsModal.classList.remove("expanded");
